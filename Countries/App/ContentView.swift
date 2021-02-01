@@ -12,14 +12,15 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     var countries: [Country] = countriesData
     
-    
     // MARK: - BODY
     var body: some View {
         NavigationView{
             List{
                 ForEach(countries){ country in
-                    CountryRowView(country: country)
-                        .padding(.vertical, 4)
+                    NavigationLink(destination: CountryDetailView(country: country)){
+                        CountryRowView(country: country)
+                            .padding(.vertical, 4)
+                    }
                 }
             }//: LIST
             .navigationTitle("Countries")
