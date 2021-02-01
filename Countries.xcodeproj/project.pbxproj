@@ -15,6 +15,7 @@
 		F10CA0CB25C8616400AD329D /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10CA0CA25C8616400AD329D /* CountryData.swift */; };
 		F10CA0CE25C862F700AD329D /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10CA0CD25C862F700AD329D /* CountryRowView.swift */; };
 		F189682825C8A83E00A4EDEF /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189682725C8A83E00A4EDEF /* CountryDetailView.swift */; };
+		F189682B25C8ACD000A4EDEF /* CountryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189682A25C8ACD000A4EDEF /* CountryHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F10CA0CA25C8616400AD329D /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
 		F10CA0CD25C862F700AD329D /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
 		F189682725C8A83E00A4EDEF /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		F189682A25C8ACD000A4EDEF /* CountryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F10CA0CD25C862F700AD329D /* CountryRowView.swift */,
+				F189682A25C8ACD000A4EDEF /* CountryHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F189682B25C8ACD000A4EDEF /* CountryHeaderView.swift in Sources */,
 				F189682825C8A83E00A4EDEF /* CountryDetailView.swift in Sources */,
 				F10CA0B425C85FC600AD329D /* ContentView.swift in Sources */,
 				F10CA0C725C8608C00AD329D /* CountryModel.swift in Sources */,

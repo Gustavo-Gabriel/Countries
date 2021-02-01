@@ -21,6 +21,7 @@ struct CountryDetailView: View {
                 VStack(alignment: .center, spacing: 20){
                     
                     // HEADER
+                    CountryHeaderView(country: country)
                     
                     VStack(alignment: .leading, spacing: 20){
                         
@@ -42,7 +43,10 @@ struct CountryDetailView: View {
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center)
                 }//: VSTACK
+                .navigationBarTitle(country.title, displayMode: .inline)
+                .navigationBarHidden(true)
             }//: SCROLL
+            .edgesIgnoringSafeArea(.top)
         }//: NAVIGATION
     }
 }
