@@ -13,6 +13,7 @@
 		F10CA0B925C85FC800AD329D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10CA0B825C85FC800AD329D /* Preview Assets.xcassets */; };
 		F10CA0C725C8608C00AD329D /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10CA0C625C8608C00AD329D /* CountryModel.swift */; };
 		F10CA0CB25C8616400AD329D /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10CA0CA25C8616400AD329D /* CountryData.swift */; };
+		F10CA0CE25C862F700AD329D /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10CA0CD25C862F700AD329D /* CountryRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F10CA0BA25C85FC800AD329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10CA0C625C8608C00AD329D /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		F10CA0CA25C8616400AD329D /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		F10CA0CD25C862F700AD329D /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		F10CA0C325C85FF600AD329D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F10CA0CD25C862F700AD329D /* CountryRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				F10CA0B425C85FC600AD329D /* ContentView.swift in Sources */,
 				F10CA0C725C8608C00AD329D /* CountryModel.swift in Sources */,
+				F10CA0CE25C862F700AD329D /* CountryRowView.swift in Sources */,
 				F10CA0CB25C8616400AD329D /* CountryData.swift in Sources */,
 				F10CA0B225C85FC600AD329D /* CountriesApp.swift in Sources */,
 			);
