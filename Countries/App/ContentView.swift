@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTIES
+    var countries: [Country] = countriesData
+    
+    
+    // MARK: - BODY
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List{
+                ForEach(countries){ country in
+                    CountryRowView(country: country)
+                        .padding(.vertical, 4)
+                }
+            }//: LIST
+            .navigationTitle("Countries")
+        }//: NAVIGATION
     }
 }
 
+// MARK: - PREVIEW
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(countries: countriesData)
     }
 }
