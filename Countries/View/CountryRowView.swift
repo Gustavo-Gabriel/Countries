@@ -22,6 +22,7 @@ struct CountryRowView: View {
                 .frame(width: 80, height: 80, alignment: .center)
                 .shadow(color: .black, radius: 3, x: 2, y: 2)
                 .cornerRadius(8)
+                .padding(.horizontal, 8)
             
             VStack(alignment: .leading, spacing: 5){
                 Text(country.title)
