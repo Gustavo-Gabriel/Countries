@@ -19,17 +19,11 @@ struct CountryHeaderView: View {
     var body: some View {
         
         ZStack{
-            
-            Color(.secondaryLabel)
-            
             Image(country.image)
                 .resizable()
-                .scaledToFit()
-                .shadow(color: .black, radius: 8, x: 6, y: 8)
-                .padding(16)
                 .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
         }//: ZSTACK
-        .frame(height: 440)
+        .frame(height: 300)
         .onAppear(){
             withAnimation(.easeOut(duration: 0.5)){
                 isAnimatingImage = true

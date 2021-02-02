@@ -10,9 +10,11 @@ import SwiftUI
 let countriesData: [Country] = [
     Country(title: "Argélia",
             headline: "A Argélia está localizada no litoral norte da África, é banhada pelo Mediterrâneo.",
-            image: "argelia"),
+            image: "paisagem_argelia",
+            flagImage: "argelia"),
     
     Country(title: "Argentina",
             headline: "A Argentina é um país localizado no hemisfério sul ocidental, situado na América do Sul.",
-            image: "argentina")
+            image: "paisagem_argelia",
+            flagImage: "argentina")
 ]
