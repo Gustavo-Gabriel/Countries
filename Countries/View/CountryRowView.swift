@@ -16,7 +16,7 @@ struct CountryRowView: View {
     
     var body: some View {
         HStack{
-            Image(country.image)
+            Image(country.flagImage)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 80, height: 80, alignment: .center)

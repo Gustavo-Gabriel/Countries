@@ -15,6 +15,6 @@ let countriesData: [Country] = [
     
     Country(title: "Argentina",
             headline: "A Argentina é um país localizado no hemisfério sul ocidental, situado na América do Sul.",
-            image: "paisagem_argelia",
+            image: "paisagem_argentina",
             flagImage: "argentina")
 ]
