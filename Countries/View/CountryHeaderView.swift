@@ -22,6 +22,7 @@ struct CountryHeaderView: View {
             Image(country.image)
                 .resizable()
                 .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
+                .contrast(0.6)
                 .overlay(
                     VStack{
                         
@@ -34,6 +35,17 @@ struct CountryHeaderView: View {
                                 .frame(width: 90, height: 90, alignment: .center)
                                 .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
                                 .padding()
+                            
+                            VStack(alignment: .leading){
+                                Text(country.title)
+                                    .foregroundColor(.white)
+                                    .font(.title2)
+                                    .bold()
+                                
+                                Text(country.capital)
+                                    .foregroundColor(.white)
+                                    .font(.footnote)
+                            }
                             
                             Spacer()
                         }
@@ -54,7 +66,7 @@ struct CountryHeaderView: View {
 
 struct CountryHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryHeaderView(country: countriesData[0])
+        CountryHeaderView(country: countriesData[1])
             .previewLayout(.fixed(width: 375, height: 440))
     }
 }
