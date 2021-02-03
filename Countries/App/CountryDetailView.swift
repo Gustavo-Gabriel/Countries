@@ -29,6 +29,7 @@ struct CountryDetailView: View {
                         Text(country.title)
                             .font(.title)
                             .fontWeight(.heavy)
+                            .foregroundColor(Color("ColorBlueberryDark"))
                         
                         // HEADLINE
                         Text(country.headline)
@@ -38,6 +39,11 @@ struct CountryDetailView: View {
                         // SUBHEADLINE
                         Text("Learn more about \(country.title)".uppercased())
                             .fontWeight(.bold)
+                            .foregroundColor(Color("ColorBlueberryDark"))
+                        
+                        // DESCRIPTION
+                        Text(country.description)
+                        
                 
                     }//: VSTACK
                     .padding(.horizontal, 20)
@@ -52,6 +58,6 @@ struct CountryDetailView: View {
 
 struct CountryDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryDetailView(country: countriesData[0])
+        CountryDetailView(country: countriesData[1])
     }
 }

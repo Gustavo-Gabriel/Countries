@@ -57,5 +57,6 @@ struct CountryOverlayHeaderView: View {
 struct CountryOverlayHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         CountryOverlayHeaderView(country: countriesData[0])
+            .previewLayout(.sizeThatFits)
     }
 }
