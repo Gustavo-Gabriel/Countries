@@ -22,6 +22,23 @@ struct CountryHeaderView: View {
             Image(country.image)
                 .resizable()
                 .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
+                .overlay(
+                    VStack{
+                        
+                        Spacer()
+                        
+                        HStack{
+                            Image(country.flagImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90, alignment: .center)
+                                .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
+                                .padding()
+                            
+                            Spacer()
+                        }
+                    }
+                )
         }//: ZSTACK
         .frame(height: 300)
         .onAppear(){

@@ -16,7 +16,7 @@ struct CountryDetailView: View {
     // MARK: - BODY
     
     var body: some View {
-        NavigationView{
+        
             ScrollView(.vertical, showsIndicators: false){
                 VStack(alignment: .center, spacing: 20){
                     
@@ -38,16 +38,13 @@ struct CountryDetailView: View {
                         // SUBHEADLINE
                         Text("Learn more about \(country.title)".uppercased())
                             .fontWeight(.bold)
-                        
+                
                     }//: VSTACK
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center)
                 }//: VSTACK
-                .navigationBarTitle(country.title, displayMode: .inline)
-                .navigationBarHidden(true)
             }//: SCROLL
-            .edgesIgnoringSafeArea(.top)
-        }//: NAVIGATION
+        .navigationBarTitle(country.title, displayMode: .inline)
     }
 }
 
