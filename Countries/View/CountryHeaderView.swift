@@ -23,34 +23,7 @@ struct CountryHeaderView: View {
                 .resizable()
                 .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
                 .contrast(0.6)
-                .overlay(
-                    VStack{
-                        
-                        Spacer()
-                        
-                        HStack{
-                            Image(country.flagImage)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 90, height: 90, alignment: .center)
-                                .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
-                                .padding()
-                            
-                            VStack(alignment: .leading){
-                                Text(country.title)
-                                    .foregroundColor(.white)
-                                    .font(.title2)
-                                    .bold()
-                                
-                                Text(country.capital)
-                                    .foregroundColor(.white)
-                                    .font(.footnote)
-                            }
-                            
-                            Spacer()
-                        }
-                    }
-                )
+                .overlay(CountryOverlayHeaderView(country: country))
         }//: ZSTACK
         .frame(height: 300)
         .onAppear(){
