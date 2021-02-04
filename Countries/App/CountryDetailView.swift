@@ -12,7 +12,6 @@ struct CountryDetailView: View {
     // MARK: - PROPERTIES
     var country: Country
     
-    
     // MARK: - BODY
     
     var body: some View {
@@ -43,6 +42,11 @@ struct CountryDetailView: View {
                         
                         // DESCRIPTION
                         Text(country.description)
+                        
+                        // LINK
+                        SourceLinkView(country: country)
+                            .padding(.top, 10)
+                            .padding(.bottom, 40)
                         
                 
                     }//: VSTACK
