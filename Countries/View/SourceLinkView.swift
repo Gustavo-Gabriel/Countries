@@ -20,7 +20,7 @@ struct SourceLinkView: View {
                 Text("Content Source")
                 Spacer()
                 
-                Link("Wikepedia", destination: URL(string: "https://wikepedia.com")!)
+                Link("Wikepedia", destination: URL(string: "https://pt.m.wikipedia.org/wiki")!)
                 
                 Image(systemName: "arrow.up.right.square")
             }//: HSTACK

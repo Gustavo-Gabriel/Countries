@@ -35,6 +35,9 @@ struct CountryDetailView: View {
                             .font(.headline)
                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         
+                        // INFO
+                        CountryInfoView(country: country)
+                        
                         // SUBHEADLINE
                         Text("Learn more about \(country.title)".uppercased())
                             .fontWeight(.bold)
@@ -62,6 +65,6 @@ struct CountryDetailView: View {
 
 struct CountryDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryDetailView(country: countriesData[1])
+        CountryDetailView(country: countriesData[0])
     }
 }

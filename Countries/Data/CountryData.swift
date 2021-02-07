@@ -13,6 +13,7 @@ let countriesData: [Country] = [
             image: "paisagem_argelia",
             flagImage: "argelia",
             capital: "Argel",
+            info: ["Argel", "2.381.741 Km2", "Árido Subtropical", "34.895.470", "14,6 hab/Km2", "Árabe, Berbere, Francês", "Islamismo, Cristianismo", "Dinar Argelino", "0,677", "132.452 Milhões de US$", "72 Anos"],
             description: """
             A Argélia está localizada no litoral norte da África, é banhada pelo Mediterrâneo. Faz fronteira com a Tunísia, Líbia, Níger, Mali, Mauritânia, Saara Ocidental e Marrocos. É o segundo maior país em extensão territorial do continente africano, atrás apenas do Sudão.
 
@@ -34,6 +35,7 @@ let countriesData: [Country] = [
             image: "paisagem_argentina",
             flagImage: "argentina",
             capital: "Buenos Aires",
+            info: [""],
             description: """
             A Argentina é um país localizado no hemisfério sul ocidental, situado na América do Sul. O seu território limita-se ao norte com a Bolívia e o Paraguai; ao nordeste, com o Brasil; a leste, com o Uruguai, oceano Atlântico e as Ilhas Malvinas; e a oeste com o Chile.
 

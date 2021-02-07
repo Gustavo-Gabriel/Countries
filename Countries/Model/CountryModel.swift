@@ -16,5 +16,6 @@ struct Country: Identifiable {
     var image: String
     var flagImage: String
     var capital: String
+    var info: [String]
     var description: String
 }
